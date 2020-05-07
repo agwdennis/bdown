@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "An AGWD website"
+title = "AGWD"
 theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""
