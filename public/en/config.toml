@@ -6,20 +6,37 @@ googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-name = "Airspace Hugo"
-license = "CC BY 3.0"
-licenselink = "https://creativecommons.org/licenses/by/3.0/"
-description = "Hugo port of the Themefisher’s Airspace theme"
-homepage = "https://gethugothemes.com/products/airspace-hugo-theme/"
-tags = ["blog",'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'white', 'light', 'multilingual', "bootstrap", "company", "portfolio", "projects", "responsive", "themefisher"]
-features = ["blog", "company", "responsive", "seo-friendly"]
-min_version = "0.64.0"
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
 
-[author]
-  name = "Themefisher"
-  homepage = "https://themefisher.com/"
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/rstudio/blogdown"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/rstudio"
 
-[original]
-  name = "Airspace"
-  homepage = "https://themefisher.com/products/airspace-free-bootstrap-website-template/"
-  repo = "https://github.com/themefisher/airspace-free-html5-agency-template"
+[params]
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "favicon.ico"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
